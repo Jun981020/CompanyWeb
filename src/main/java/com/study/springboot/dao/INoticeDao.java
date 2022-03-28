@@ -13,4 +13,6 @@ public interface INoticeDao {
 
 	List<NoticeDto> noitce_info_once(String notice_idx);
 
+	List<NoticeDto> getOneNotice(String cat, String inputValue);
+
 }

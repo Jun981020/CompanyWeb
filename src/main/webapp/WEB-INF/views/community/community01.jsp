@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
-<%@ page trimDirectiveWhitespaces="true" %> 
+<%@ page trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,7 +86,6 @@
       </ul>
     </div>
   </nav>
-
   <!-- 공지사항 -->
   <div class="communitySection2 container text-center">
     <div>
@@ -110,56 +110,28 @@
         	</tr>
         </c:forEach>
         </table>
-        <!--
-        <tr onclick="window.location.href='community01_1?no=5'">
-          <td>5</td>
-          <td>새로운 공지사항을 알려드립니다.</td>
-          <td>2019-06-19</td>
-        </tr>
-        <tr onclick="window.location.href='community01_1?no=4'">
-          <td>4</td>
-          <td>새로운 공지사항을 알려드립니다.</td>
-          <td>2019-06-19</td>
-        </tr>
-        <tr onclick="window.location.href='community01_1?no=3'">
-          <td>3</td>
-          <td>새로운 공지사항을 알려드립니다.</td>
-          <td>2019-06-19</td>
-        </tr>
-        <tr onclick="window.location.href='community01_1?no=2'">
-          <td>2</td>
-          <td>새로운 공지사항을 알려드립니다.</td>
-          <td>2019-06-19</td>
-        </tr>
-        <tr onclick="window.location.href='community01_1?no=1'">
-          <td>1</td>
-          <td>새로운 공지사항을 알려드립니다.</td>
-          <td>2019-06-19</td>
-        </tr>
-      </table>
-      -->
     </div>
   </div>
-  
-
   <!-- search bar -->
+  <form action="searchAction" method="post">
   <div class="search container">
     <table>
       <tr>
         <td>
-          <select name="내용" id="">
-            <option value="">제목</option>
-            <option value="">내용</option>
-            <option value="">작성자</option>
+          <select name="cat">
+            <option value="notice_title">제목</option>
+            <option value="notice_content">내용</option>
+            <option value="notice_member_id">작성자</option>
           </select>
         </td>
         <td>
-          <input type="text">
+          <input type="text" name="inputValue">
         </td>
         <td>
-          <input type="image" src="/img/community/search.gif">
+          <input type="image" src="/img/community/search.gif" onclick="submit">
         </td>
       </tr>
     </table>
   </div>
+  </form>
 <c:import url="../footer.jsp" />

@@ -83,7 +83,6 @@
   </nav>
 
   <!-- 회사개요 -->
-  <div class="container-fluid d-flex flex-column align-items-center pl-0 pr-0 " style="max-width: 1100px;">
   <div class="companySection2 container text-center my-4 d-flex flex-column">
   	  <span>회사개요</span>
   	  <span>The design and maintenance are excellent.</span>
@@ -246,6 +245,5 @@
         </dd>
       </dl>
     </div>
-  </div>
   </div>
 <c:import url="../footer.jsp"/>

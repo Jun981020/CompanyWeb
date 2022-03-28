@@ -10,6 +10,10 @@
 	</select>
 	
 	<select id = "noitce_info_once" resultType="com.study.springboot.dto.NoticeDto">
-		select * from company_notice where notice_idx =#{param1}
+		select * from company_notice where notice_idx = #{param1}
+	</select>
+	
+	<select id ="getOneNotice" resultType="com.study.springboot.dto.NoticeDto">
+		select * from company_notice where #{param1} = #{param2}
 	</select>
 </mapper> 
