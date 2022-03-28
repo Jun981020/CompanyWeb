@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- SQL 끝에 ; 세미콜론을 넣지 마세요! -->
+
+<mapper namespace="com.study.springboot.dao.IJobDao">   
+	<select id="list" resultType="com.study.springboot.dto.JobDto"> 
+        select * from company_job
+	</select>
+	
+	<select id = "job_info_once" resultType="com.study.springboot.dto.JobDto">
+		select * from company_job where job_idx =#{param1}
+	</select>
+	
+</mapper> 

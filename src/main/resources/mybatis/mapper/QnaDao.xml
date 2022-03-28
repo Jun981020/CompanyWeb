@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- SQL 끝에 ; 세미콜론을 넣지 마세요! -->
+
+<mapper namespace="com.study.springboot.dao.IQnaDao">    
+
+	<insert id="write">
+		INSERT INTO company_qna (qna_idx, qna_name, qna_pw, qna_title, qna_content, qna_date)
+		VALUES (company_qna_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4},
+				sysdate)							 
+	</insert>
+
+	<select id="list" resultType="com.study.springboot.dto.QnaDto"> 
+        select * from company_qna order by qna_idx desc
+	</select>
+	
+	<select id = "qna_info_once" resultType="com.study.springboot.dto.QnaDto">
+		select * from company_qna where qna_idx =#{param1}
+	</select>
+	
+	<select id="qna_pw_check" resultType="_int">
+		select count(*) from company_qna where qna_idx = #{param1} and qna_pw = #{param2}
+	</select>	
+	
+ 
+</mapper>
