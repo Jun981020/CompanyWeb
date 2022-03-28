@@ -4,8 +4,6 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- SQL 끝에 ; 세미콜론을 넣지 마세요! -->
-
 <mapper namespace="com.study.springboot.dao.IFaqDao">   
 	<select id="list" resultType="com.study.springboot.dto.FaqDto"> 
         select * from company_faq order by faq_idx desc

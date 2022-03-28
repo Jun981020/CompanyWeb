@@ -49,18 +49,14 @@ public class MyController {
 	}
 	
 	@RequestMapping("/main")
-	public String main( Model model) {
+	public String main() {
 		
-		model.addAttribute("mainPage", "main.jsp");
-		
-		return "index"; //"index.jsp" 디스패치함.
+		return "main"; //"index.jsp" 디스패치함.
 	}
 	@RequestMapping("/member/login")
-	public String login(HttpServletRequest request, Model model) {
+	public String login(HttpServletRequest request) {
 		
-		model.addAttribute("mainPage", "member/login.jsp");
-		
-		return "index"; //index.jsp 디스패치 
+		return "/member/login"; //index.jsp 디스패치 
 	}
 	@RequestMapping("/member/loginAction")
 	@ResponseBody
@@ -150,17 +146,13 @@ public class MyController {
 	@RequestMapping("/member/join")
 	public String join(HttpServletRequest request, Model model) {
 		
-		model.addAttribute("mainPage", "member/join.jsp");
-		
-		return "index"; //index.jsp 디스패치 
+		return "/member/join"; //index.jsp 디스패치 
 	}
 
 	@RequestMapping("/member/join2")
 	public String join2(HttpServletRequest request, Model model) {
 		
-		model.addAttribute("mainPage", "member/join2.jsp");
-		
-		return "index"; //index.jsp 디스패치 
+		return "/member/join2"; //index.jsp 디스패치 
 	}
 	@RequestMapping("/member/idCheckAjax")
 	@ResponseBody
@@ -222,44 +214,32 @@ public class MyController {
 	@RequestMapping("/company/company01")
 	public String company01(Model model) {
 		
-		model.addAttribute("mainPage","company/company01.jsp");
-		
-		return "index";
+		return "/company/company01";
 	}
 	@RequestMapping("/company/company03")
 	public String company03(Model model) {
 		
-		model.addAttribute("mainPage", "company/company03.jsp");
-	
-		return "index";
+		return "/company/company03";
 	}
 	
 	@RequestMapping("/business/business01")
 	public String business01(Model model) {
 		
-		model.addAttribute("mainPage", "business/business01.jsp");
-	
-		return "index";
+		return "/business/business01";
 	}
 	
 	@RequestMapping("/product/product01")
 	public String product01(Model model) {
 		
-		
-		model.addAttribute("mainPage", "product/product01.jsp");
-	
-		return "index";
+		return "/product/product01";
 	}
 	
 	@RequestMapping("/community/community01")
 	public String community01(Model model) {
 		
 		List<NoticeDto> list = noticeService.list();
-		
 		model.addAttribute("list", list);
-		model.addAttribute("mainPage", "community/community01.jsp");
-	
-		return "index";
+		return "/community/community01";
 		
 		
 	}
@@ -270,9 +250,7 @@ public class MyController {
 		List<NoticeDto> dto = noticeService.notice_info_once(notice_idx);
 		model.addAttribute("dto", dto);
 		System.out.println("notice_idx:"+notice_idx);
-		model.addAttribute("mainPage", "community/community01_1.jsp");
-		
-		return "index";
+		return "/community/community01_1";
 	}
 	
 	@RequestMapping("/community/community02")
@@ -281,9 +259,7 @@ public class MyController {
 		List<NewsDto> list = newsService.list();
 		
 		model.addAttribute("list", list);
-		model.addAttribute("mainPage", "community/community02.jsp");
-	
-		return "index";
+		return "/community/community02";
 	}
 	@RequestMapping("/community/community02_1")
 	public String community02_1(@RequestParam("news_idx")String news_idx,
@@ -292,9 +268,7 @@ public class MyController {
 		List<NewsDto> dto = newsService.news_info_once(news_idx);
 		
 		model.addAttribute("dto", dto);
-		model.addAttribute("mainPage", "community/community02_1.jsp");
-	
-		return "index";
+		return "/community/community02_1";
 	}
 	@RequestMapping("/community/community03")
 	public String community03(Model model) {
@@ -302,9 +276,7 @@ public class MyController {
 		List<JobDto> list = jobService.list();
 		
 		model.addAttribute("list", list);
-		model.addAttribute("mainPage", "community/community03.jsp");
-	
-		return "index";
+		return "/community/community03";
 	}
 	
 	@RequestMapping("/community/community03_1")
@@ -314,22 +286,13 @@ public class MyController {
 		List<JobDto> dto = jobService.job_info_once(job_idx);
 		
 		model.addAttribute("dto", dto);
-		model.addAttribute("mainPage", "community/community03_1.jsp");
-	
-		return "index";
+		return "/community/community03_1";
 	}
-	
-	
-	
-	
 	
 	@RequestMapping("/customer/customer01")
 	public String customer01(Model model) {
 		
-		model.addAttribute("mainPage", "customer/customer01.jsp");
-		
-	
-		return "index";
+		return "/customer/customer01";
 	}
 	
 	@RequestMapping("/customer/customer02")
@@ -339,9 +302,7 @@ public class MyController {
 		list = qnaService.list();
 		
 		model.addAttribute("list", list);
-		model.addAttribute("mainPage", "customer/customer02.jsp");
-	
-		return "index";
+		return "/customer/customer02";
 	}
 	
 	
@@ -349,9 +310,7 @@ public class MyController {
 	@RequestMapping("/customer/customer02_2")
 	public String customer02_2(Model model) {
 			
-		model.addAttribute("mainPage", "customer/customer02_2.jsp");
-		
-		return "index";
+		return "/customer/customer02_2";
 	}
 	
 	
@@ -395,9 +354,7 @@ public class MyController {
 		List<QnaDto> list = qnaService.qna_info_once(qna_idx);
 		
 		model.addAttribute("list", list);
-		model.addAttribute("mainPage", "customer/customer02_1.jsp");
-	
-		return "index";
+		return "/customer/customer02_1";
 	}
 	
 	//qna 질문등록
@@ -423,7 +380,6 @@ public class MyController {
 		}
 			
 	}
-	
 	
 	@RequestMapping("/customer/one2oneAction")
 	@ResponseBody
@@ -456,9 +412,7 @@ public class MyController {
 		List<FaqDto> list = faqService.list();
 		
 		model.addAttribute("list", list);
-		model.addAttribute("mainPage", "customer/customer03.jsp");
-	
-		return "index";
+		return "/customer/customer03";
 	}
 	
 	
@@ -470,12 +424,7 @@ public class MyController {
 		model.addAttribute("dto", dto);
 		
 		model.addAttribute("mainPage", "customer/customer03_1.jsp");
-		return "index";
+		return "/customer/customer03_1";
 	}
 	
-	
-	
 }
-
-
-
