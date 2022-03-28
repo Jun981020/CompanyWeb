@@ -11,7 +11,7 @@
   
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/member/join.css">
+  <link rel="stylesheet" href="/css/customer/customer.css">
   
   
   <!-- Bootstrap CSS -->

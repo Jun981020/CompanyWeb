@@ -11,8 +11,6 @@
   
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/member/join.css">
-  
   
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -42,7 +40,7 @@
         </div>
         <div>
           <button type="button" class="carouselBtn">
-            <a href="#">Learn More</a></button>
+            <a href="/company/company01">Learn More</a></button>
         </div>
       </div>
     </div>
@@ -57,7 +55,7 @@
             최선을 다합니다.</p>
         </div>
         <div>
-          <button type="button" class="carouselBtn"><a href="#">Learn More</a></button>
+          <button type="button" class="carouselBtn"><a href="/company/company01">Learn More</a></button>
         </div>  
       </div>
     </div>
@@ -72,7 +70,7 @@
         반응형디자인으로 고객만족을 최우선으로 합니다</p>
         </div>
         <div>
-          <button type="button" class="carouselBtn"><a href="#">Learn More</a></button>
+          <button type="button" class="carouselBtn"><a href="/company/company01">Learn More</a></button>
         </div>  
       </div>
     </div>
@@ -113,7 +111,7 @@
     <div class="row">
       <div class="proSection2">
         <div class="contents1 con1 ">
-          <a href="#">
+          <a href="/product/product01">
             <img src="/img/m-op01.jpg">
             <div class="overlay">
               <div class="con2">
@@ -125,7 +123,7 @@
         </div>
         <div class="proSection3 ">
           <div class="contents2 con1">
-            <a href="#">
+            <a href="/product/product01">
               <img src="/img/m-op02.jpg">
               <div class="overlay">
                 <div class="con2">
@@ -136,7 +134,7 @@
             </a>  
           </div>
           <div class="contents3 con1">
-            <a href="#">
+            <a href="/product/product01">
               <img src="/img/m-op03.jpg">
               <div class="overlay">
                 <div class="con2">
@@ -147,7 +145,7 @@
             </a>  
           </div>
           <div class="contents4 con1">
-            <a href="#">
+            <a href="/product/product01">
               <img src="/img/m-op04.jpg">
               <div class="overlay">
                 <div class="con2">
@@ -158,7 +156,7 @@
             </a>  
           </div>
           <div class="contents5 con1">
-            <a href="#">
+            <a href="/product/product01">
               <img src="/img/m-op05.jpg">
               <div class="overlay">
                 <div class="con2">
@@ -183,7 +181,7 @@
   </div>
   <div class="businessSection2">
     <div class="businessCard">
-      <a href="#">
+      <a href="/business/business01">
         <img class="businessImg" src="/img/m-mb01.jpg">
         <div>
           <h4>사업분야01</h4>
@@ -192,7 +190,7 @@
       </a>
     </div>
     <div class="businessCard">
-      <a href="#">
+      <a href="/business/business01">
         <img class="businessImg" src="/img/m-mb02.jpg">
         <div>
           <h4>사업분야02</h4>
@@ -201,7 +199,7 @@
       </a>
     </div>
     <div class="businessCard">
-      <a href="#">
+      <a href="/business/business01">
         <img class="businessImg" src="/img/m-mb03.jpg">
         <div>
           <h4>사업분야03</h4>
@@ -210,7 +208,7 @@
       </a>
     </div>
     <div class="businessCard">
-      <a href="#">
+      <a href="/business/business01">
         <img class="businessImg" src="/img/m-mb04.jpg">
         <div>
           <h4>사업분야04</h4>
@@ -241,7 +239,7 @@
   </div>
   <div class="csSection2">
     <div>
-      <h5>공지사항<a href="#">더보기</a></h5>
+      <h5>공지사항<a href="/community/community01">더보기</a></h5>
     </div>
     <div>
       <ul>
@@ -253,7 +251,7 @@
   </div>
   <div class="csSection3">
     <div class="csCard1">
-      <a href="#">
+      <a href="/customer/customer02">
         <div>
           <img src="/img/m-os01.png">
         </div>
@@ -266,7 +264,7 @@
       </a>
     </div>
     <div class="csCard2">
-      <a href="#">
+      <a href="/community/community03">
         <div>
           <img src="/img/m-os02.png">
         </div>
@@ -279,7 +277,7 @@
       </a>
     </div>
     <div class="csCard3">
-      <a href="#">
+      <a href="/company/company03">
         <div>
           <img src="/img/m-os03.png">
         </div>

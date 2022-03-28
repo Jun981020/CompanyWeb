@@ -11,7 +11,7 @@
   
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/member/join.css">
+  <link rel="stylesheet" href="/css/company/company01.css">
   
   
   <!-- Bootstrap CSS -->
@@ -25,7 +25,6 @@
   <!-- 헤더 -->
   <div id="headerTop"></div>
   <div id="header" class="sticky-top"></div>
-
   <!-- 메인 -->
   <!-- 회사소개1 -->
   <!-- COMMON -->
@@ -81,26 +80,23 @@
           </ul>
         </li>
       </ul>
-    </div>
   </nav>
 
   <!-- 회사개요 -->
-  <div class="companySection2 container text-center">
-    <div>
-      <div>회사개요</div>
-      <div>The design and maintenance are excellent.</div>
-      <div>고객과의 신뢰와 디자인 가치 창출을, 최우선으로 생각합니다.</div>
-      <div>디자인을 통한 비지니스 네트워크를 구축하여 고객의 필요와 요구를 파악하고 
+  <div class="container-fluid d-flex flex-column align-items-center pl-0 pr-0 " style="max-width: 1100px;">
+  <div class="companySection2 container text-center my-4 d-flex flex-column">
+  	  <span>회사개요</span>
+  	  <span>The design and maintenance are excellent.</span>
+  	  <span>고객과의 신뢰와 디자인 가치 창출을, 최우선으로 생각합니다.</span>
+  	  <span>디자인을 통한 비지니스 네트워크를 구축하여 고객의 필요와 요구를 파악하고 
         기존 사업과 연계하여 시너지를 창출하며 고객 감동을 실현해 나갈 것입니다. 
         다양한 환경에 적응하며 경쟁하기 위해 모든 기술과 디자인 역량을 집중하고 
-        고객과의 친밀한 소통과 협력을 통해 최고의 품질을 제공하고 있습니다.</div>
-    </div>
-    <div>
-      <img src="/img/company/img0101.gif">
-    </div>
+        고객과의 친밀한 소통과 협력을 통해 최고의 품질을 제공하고 있습니다.</span>
   </div>
-
-  <div class="companySection3">
+   <div class="d-flex flex-row justify-content-center my-3 w-100">
+   <img src="/img/company/img0101.gif">
+   </div>
+  <div class="companySection3 d-flex flex-column justify-content-center w-100">
     <div class="container companyMain">
       <div class="section3_1">
         <img src="/img/company/img0102.jpg">
@@ -249,7 +245,7 @@
           </ul>
         </dd>
       </dl>
-
     </div>
+  </div>
   </div>
 <c:import url="../footer.jsp"/>
