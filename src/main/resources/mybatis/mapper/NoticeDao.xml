@@ -13,7 +13,15 @@
 		select * from company_notice where notice_idx = #{param1}
 	</select>
 	
-	<select id ="getOneNotice" resultType="com.study.springboot.dto.NoticeDto">
-		select * from company_notice where #{param1} = #{param2}
+	<select id ="getOneNotice_title" resultType="com.study.springboot.dto.NoticeDto">
+		select * from company_notice where notice_title = #{param1}
+	</select>
+	
+	<select id ="getOneNotice_content" resultType="com.study.springboot.dto.NoticeDto">
+		select * from company_notice where notice_content = #{param1}
+	</select>
+	
+	<select id ="getOneNotice_memberID" resultType="com.study.springboot.dto.NoticeDto">
+		select * from company_notice where notice_member_id = #{param1}
 	</select>
 </mapper> 

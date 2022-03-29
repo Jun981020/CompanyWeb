@@ -27,9 +27,21 @@ public class NoticeService {
 	}
 
 	public Model getOneNoticeList(String cat, String inputValue ,Model model) {
-		List<NoticeDto> list = noticeDao.getOneNotice(cat,inputValue);
-		System.out.println(list);
-		model.addAttribute("list",list);
+		//카테고리가 무었인지 분류
+		switch (cat) {
+		case "notice_title":
+			List<NoticeDto> list_title = noticeDao.getOneNotice_title(inputValue);
+			model.addAttribute("list", list_title);
+			break;
+		case "notice_content":
+			List<NoticeDto> list_content = noticeDao.getOneNotice_title(inputValue);
+			model.addAttribute("list", list_content);
+			break;
+		case "notice_member_id":
+			List<NoticeDto> list_member_id = noticeDao.getOneNotice_title(inputValue);
+			model.addAttribute("list", list_member_id);
+			break;
+		}
 		return model;
 	}
 

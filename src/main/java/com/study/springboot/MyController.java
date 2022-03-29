@@ -248,7 +248,7 @@ public class MyController {
 		System.out.println(cat);
 		System.out.println(inputValue);
 		model = noticeService.getOneNoticeList(cat,inputValue,model);
-		return"/community/community01";
+		return "/community/community01";
 	}
 	
 	@RequestMapping("/community/community01_1")

@@ -11,7 +11,7 @@
   
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/customer/customer.css">
+  <link rel="stylesheet" href="/css/customer/customer03.css">
   
   
   <!-- Bootstrap CSS -->
@@ -81,7 +81,6 @@
           </ul>
         </li>
       </ul>
-    </div>
   </nav>
 
   <!-- FAQ : 상세 -->
