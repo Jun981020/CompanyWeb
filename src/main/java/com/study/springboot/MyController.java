@@ -240,9 +240,17 @@ public class MyController {
 		List<NoticeDto> list = noticeService.list();
 		model.addAttribute("list", list);
 		return "/community/community01";
-		
-		
 	}
+	
+	@RequestMapping("/community/searchAction")
+	public String searchAction(@RequestParam(name = "cat")String cat,
+							   @RequestParam(name = "inputValue")String inputValue,Model model) {
+		System.out.println(cat);
+		System.out.println(inputValue);
+		model = noticeService.getOneNoticeList(cat,inputValue,model);
+		return "/community/community01";
+	}
+	
 	@RequestMapping("/community/community01_1")
 	public String community01_1(@RequestParam(value= "notice_idx")String notice_idx,
 								Model model) {
