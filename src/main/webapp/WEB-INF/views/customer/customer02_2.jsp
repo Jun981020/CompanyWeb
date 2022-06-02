@@ -81,7 +81,6 @@
           </ul>
         </li>
       </ul>
-    </div>
   </nav>
 
   <!-- 묻고답하기 - 글쓰기 -->
@@ -106,14 +105,11 @@
                 <td><input type="password" name="qna_pw"></td>
               </tr>
             </table>  
-          
-        </div>
+         </div>
     </div>
     <div class="container content_textarea">
-      <div>
         <textarea name="qna_content" id="editor4">
         </textarea>
-      </div>
     </div>
   <div class="container btnImg text-center">
     <table>
@@ -122,12 +118,12 @@
         <td>
           <input type=image src="/img/customer/btn_confirm.gif" name = "submit">
           <input type=image src="/img/customer/btn_cancel.gif">
-           </form>
           </td>
         <td></td>
       </tr>
     </table>
   </div>
+ </form>
   <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
   <script>CKEDITOR.replace('editor4');</script>
   <!-- <script>CKEDITOR.replace('editor4',{filebrowserUploadUrl:'/mine/imageUpload.do'});</script> -->

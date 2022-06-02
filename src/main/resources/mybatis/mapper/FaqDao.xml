@@ -6,7 +6,7 @@
 
 <mapper namespace="com.study.springboot.dao.IFaqDao">   
 	<select id="list" resultType="com.study.springboot.dto.FaqDto"> 
-        select * from company_faq order by faq_idx desc
+        select * from company_faq order by faq_idx asc
 	</select>
 	
 	<select id="view" resultType="com.study.springboot.dto.FaqDto"> 

@@ -8,10 +8,10 @@
 
 	<insert id="write">
 	
-		INSERT INTO company_one2one (one2one_idx, one2one_name, one2one_phone, one2one_email, one2one_address,
-									 one2one_title, one2one_content, one2one_date)
-		VALUES (company_one2one_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, #{param5},
-				#{param6}, sysdate)							 
+		INSERT INTO company_one2one (one2one_name, one2one_phone, one2one_email, one2one_address,
+									 one2one_title, one2one_content, one2one_date,one2one_cat)
+		VALUES (#{param1}, #{param2}, #{param3}, #{param4}, #{param5},
+				#{param6}, now(), #{param7})							 
 	
 	</insert>
 

@@ -81,8 +81,7 @@
           </ul>
         </li>
       </ul>
-    </div>
-  </nav>
+     </nav>
 
   <!-- FAQ -->
   <div class="communitySection2 container text-center">
@@ -91,30 +90,7 @@
       <div>The design and maintenance are excellent.</div>
     </div>
     <div class="faq">
-    <!--
-      <table>
-        <tr>
-          <td>질문1</td>
-          <td onclick="window.location.href='customer03_1?no=1'">자주하는 질문모음입니다.</td>
-        </tr>
-        <tr>
-          <td>질문2</td>
-          <td onclick="window.location.href='customer03_1?no=2'">자주하는 질문모음입니다.</td>
-        </tr>
-        <tr>
-          <td>질문3</td>
-          <td onclick="window.location.href='customer03_1?no=3'">자주하는 질문모음입니다.</td>
-        </tr>
-        <tr>
-          <td>질문4</td>
-          <td onclick="window.location.href='customer03_1?no=4'">자주하는 질문모음입니다.</td>
-        </tr>
-        <tr>
-          <td>질문5</td>
-          <td onclick="window.location.href='customer03_1?no=5'">자주하는 질문모음입니다.</td>
-        </tr>
-      </table>
-      -->
+     
       <table>
       	<c:forEach var = "dto" items="${list}">
       	<tr>
@@ -122,7 +98,7 @@
       			 질문${dto.faq_idx}
       		</td>
       		<td> 
-      		<a href = "customer03_1?faq_idx=${dto.faq_idx}">${dto.faq_title}</a>
+      		<a href = "customer03_1?faq_idx=${dto.faq_idx}" style='text-decoration:none;color:black'>${dto.faq_title}</a>
       		</td>
       	</tr>
       	</c:forEach>

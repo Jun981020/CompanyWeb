@@ -96,8 +96,8 @@
           <td>자주하는 질문모음입니다.</td>
         </tr>
         <tr>
-          <td colspan="2">
-              ${dto.faq_content};
+          <td colspan="2" height='100px'>
+              ${dto.faq_content}
           </td>
         </tr>
       </table>

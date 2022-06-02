@@ -23,7 +23,7 @@
 	<!-- 네비바 -->
 	<nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
 	  <div class="container">
-	    <a class="navbar-brand" href="/"><img src="/img/logo.png" class="img-fluid" alt="로고" width="200px" height="60px"></a>
+	    <a class="navbar-brand" href="/"><img src="/img/logo.png" class="" alt="로고" width="250px" height="150px"></a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" 
 	            data-target="#collapsibleNavbar"> 
 	      <span class="navbar-toggler-icon"></span>

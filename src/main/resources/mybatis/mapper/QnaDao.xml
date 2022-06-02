@@ -7,9 +7,8 @@
 <mapper namespace="com.study.springboot.dao.IQnaDao">    
 
 	<insert id="write">
-		INSERT INTO company_qna (qna_idx, qna_name, qna_pw, qna_title, qna_content, qna_date)
-		VALUES (company_qna_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4},
-				sysdate)							 
+		INSERT INTO company_qna (qna_name, qna_pw, qna_title, qna_content, qna_date)
+		VALUES (#{param1}, #{param2}, #{param3}, #{param4}, now())							 
 	</insert>
 
 	<select id="list" resultType="com.study.springboot.dto.QnaDto"> 

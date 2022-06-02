@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <%@ page trimDirectiveWhitespaces="true" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,7 +92,6 @@
       <div>The design and maintenance are excellent.</div>
     </div>
     <div class="qna">
-    
       <table>
         <tr>
           <th>번호</th>
@@ -109,41 +109,7 @@
         	<td><fmt:formatDate value="${dto.qna_date}" pattern="yyyy-MM-dd"/></td>
         </tr>
         </c:forEach>
-        </table>
-        <!--
-        <tr onclick="openWindow(5)">
-          <td>5</td>
-          <td><img src="/img/customer/icon_sct.gif">문의사항에 대해 자세한 답변 부탁합니다.</td>
-          <td>hong</td>
-          <td>2019-06-19</td>
-        </tr>
-        <tr onclick="openWindow(4)">
-          <td>4</td>
-          <td><img src="/img/customer/icon_sct.gif">문의사항에 대해 자세한 답변 부탁합니다.</td>
-          <td>hong</td>
-          <td>2019-06-19</td>
-        </tr>
-        <tr onclick="openWindow(3)">
-          <td>3</td>
-          <td><img src="/img/customer/icon_sct.gif">문의사항에 대해 자세한 답변 부탁합니다.</td>
-          <td>hong</td>
-          <td>2019-06-19</td>
-        </tr>
-        <tr onclick="openWindow(2)">
-          <td>2</td>
-          <td><img src="/img/customer/icon_sct.gif">문의사항에 대해 자세한 답변 부탁합니다.</td>
-          <td>hong</td>
-          <td>2019-06-19</td>
-        </tr>
-        <tr onclick="openWindow(1)">
-          <td>1</td>
-          <td><img src="/img/customer/icon_sct.gif">문의사항에 대해 자세한 답변 부탁합니다.</td>
-          <td>hong</td>
-          <td>2019-06-19</td>
-        </tr>
-      </table>
-       -->
-       
+        </table>       
     </div>
   </div>
 

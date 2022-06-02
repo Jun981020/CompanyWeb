@@ -334,17 +334,16 @@ public class MyController {
 	}
 	
 	//qna 비밀번호 확인 액션
-	@RequestMapping("/customer/qna_pw_check_Action")
+	@RequestMapping("/customer/check_qna_pw_Action")
 	@ResponseBody
 	public String check_qna_pw_Action(HttpServletRequest request,
 								      @RequestParam("qna_idx")String qna_idx,
-									  @RequestParam("qna_pw_check")String qna_pw_check,
-									  Model model) {
+									  @RequestParam("qna_pw_check")String qna_pw_check){
 		
 		
-		
-		model.addAttribute("qna_idx",qna_idx);
 		int result = qnaService.qna_pw_check(qna_idx , qna_pw_check);
+		System.out.println(qna_idx);
+		System.out.println(qna_pw_check);
 		System.out.println(result);
 		
 		if(result == 1) {
@@ -397,9 +396,10 @@ public class MyController {
 						  @RequestParam("one2one_address")String one2one_address,
 						  @RequestParam("one2one_title")String one2one_title,
 						  @RequestParam("one2one_content")String one2one_content,
+						  @RequestParam("one2one_cat")String one2one_cat,
 						  Model model) {
 		int result = one2oneService.write(one2one_name,one2one_phone,one2one_email,one2one_address,
-										  one2one_title,one2one_content);
+										  one2one_title,one2one_content,one2one_cat);
 		System.out.println("one2one_name:"+one2one_name);
 		System.out.println("one2one_phone:"+one2one_phone);
 		System.out.println("one2one_email:"+one2one_email);		

@@ -81,8 +81,7 @@
           </ul>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
 
   <!-- 1:1문의 -->
   <div class="communitySection2 container text-center">
@@ -91,14 +90,14 @@
       <div>The design and maintenance are excellent.</div>
     </div>
     <div class="question">
-      <form action="one2oneAction" name="questionForm" mthod="post">
+      <form action="one2oneAction" name="questionForm" method="post">
         <table>
           <tr>
             <td>구분</td>
-            <td><select name="cate">
-                  <option value="1">로그인</option>
-                  <option value="2">회원가입</option>
-                  <option value="3">이용안내</option>
+            <td><select name="one2one_cat">
+                  <option value="login">로그인</option>
+                  <option value="join">회원가입</option>
+                  <option value="information">이용안내</option>
                 </select>
             </td>
           </tr>
@@ -127,12 +126,12 @@
             <td><textarea name="one2one_content" rows="10" style="width: 90%;"></textarea></td>
           </tr>
         </table>
-    </div>
     <div class="btn">
       <input type="image" src="/img/customer/btn_confirm.gif" onclick="submit()" name="submit">
       <input type="image" src="/img/customer/btn_cancel.gif">
-     </form>
     </div>
+  	</form>
+  </div>
   </div>
 
 <c:import url="../footer.jsp"/>

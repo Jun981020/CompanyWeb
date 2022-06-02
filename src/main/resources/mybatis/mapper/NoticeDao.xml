@@ -14,7 +14,7 @@
 	</select>
 	
 	<select id ="getOneNotice_title" resultType="com.study.springboot.dto.NoticeDto">
-		select * from company_notice where notice_title = #{param1}
+		select * from company_notice where notice_title like CONCAT('%',#{param1},'%')
 	</select>
 	
 	<select id ="getOneNotice_content" resultType="com.study.springboot.dto.NoticeDto">
