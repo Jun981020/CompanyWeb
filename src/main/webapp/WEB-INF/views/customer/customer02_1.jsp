@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+
 <%@ page trimDirectiveWhitespaces="true" %> 
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +72,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" 
               role="button" data-toggle="dropdown" aria-expanded="false">
-              FAQ
+              묻고답하기
           </a>
           <ul class="dropdown-menu asd">
             <li><a class="dropdown-item" href="/customer/costomer01">1:1문의</a></li>
@@ -89,10 +91,10 @@
       <div>묻고답하기</div>
       <div>The design and maintenance are excellent.</div>
     </div>
-    <div class="faq_detail">
+    <div class="faq_detail w-100">
     
-      <table>
-      <c:forEach var = "dto" items="${list}">
+    <c:forEach var = "dto" items="${list}">
+      <table border="1" class="w-100 m-auto" style="width:600px">
         <tr>
           <td>제목</td>
           <td>${ dto.qna_title }</td>
@@ -112,8 +114,8 @@
               ${ dto.qna_content }
           </td>
         </tr>
-        </c:forEach>
       </table>
+    </c:forEach>
       
     </div>
     <div class="list">

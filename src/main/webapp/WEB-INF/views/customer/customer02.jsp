@@ -82,8 +82,7 @@
           </ul>
         </li>
       </ul>
-    </div>
-  </nav>
+     </nav>
 
   <!-- 묻고답하기 -->
   <div class="communitySection2 container text-center">
